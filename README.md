@@ -1,8 +1,6 @@
 # ShadowExchange
-don't readme
+DLL Hijack to run tscon before user login (need LocalAdmin privilegs to use), and still open sessions in the computer.
+simply compile the cpp script (in x64), and put the compile DLL in this path "%windir%\system32\speech_onecore\engines\tts\", and rename it to "msttsloc_onecoreenus.dll", or simply use the precompile file i provided.
+then in the login screen press Ctrl+WinK+Enter.
 
-"C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" amd64
-
-%windir%\system32\speech_onecore\engines\tts\msttsloc_onecoreenus.dll
-
-cl.exe /O2 /MT /DUNICODE /D_UNICODE main8.cpp /Fe:MSTTSLoc_OneCoreEnUS.dll /link /DLL User32.lib Wtsapi32.lib
+u can also modify the script to ur wish.
